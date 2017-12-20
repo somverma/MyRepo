@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MovieInfo</title>
+<link rel="stylesheet"
+	href="https://bootswatch.com/4/cyborg/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<nav class="navcar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">MovieInfo</a>
+			</div>
+		</div>
+	</nav>	
+	<div class="container">
+	
+
+		<div class="jumbotron" >
+		
+		<p align="left"><h5 class="text-left">Search Movie</h5></p>
+		
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Featurd</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#title">Title</a>
+    <a href="#year">Year</a>
+    <a href="http://www.imdb.com/chart/top/?ref_=nv_mv_250_6">Rated</a>   
+    <a href="http://www.imdb.com/calendar/?ref_=nv_mv_cal_5">Released</a>
+    <a href="#rated">Runtime</a>
+    <a href="http://www.imdb.com/genre/?ref_=nv_ch_gr_3">Genre</a>
+    <a href="#rated">Director</a>
+    <a href="#rated">Writer</a>   
+    <a href="http://www.imdb.com/find?ref_=nv_sr_fn&q=actors&s=all">Actors</a>
+    <a href="#rated">Plot (full)</a>
+    <a href="#rated">Language</a>
+    <a href="#rated">Awards</a>
+    <a href="postersearch.html">Poster</a>
+    <a href="#rated">List of rating</a>
+    <a href="#rated">imdbRating</a>
+    <a href="#rated">imdbVotes</a>
+       <a href="#rated">Type</a>
+  </div>
+</div>
+			
+			<form id="searchForm"  >
+				<input type="text" class="form-control" id="searchText"
+					placeholder="Search Movie">
+			</form>
+
+
+		</div>
+
+	</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	
+	<div class="container">
+		<div id="movies" class="well"></div>
+	</div>
+	<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+<script >getMovie();</script>
+</body>
+</html>

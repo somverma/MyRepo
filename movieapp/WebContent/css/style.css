@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+#movies img, #movie img {
+	width: 50%;
+}
+
+
+@media(min-width:200px)
+#movies .col-md-3 .well {
+	height: 50px;
+}
+
+#movies .col-md-3 img {
+	height: 50px;
+}
+}
+
+<style>
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: green;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+
+
+body {
+  background: url(https://static.pexels.com/photos/1043/red-building-industry-bricks-large.jpg) no-repeat;
+  background-size: cover;
+  color: #FFF;
+  font-family: 'Lato';
+}
+
+.img-responsive {
+  width: 90vw;
+  max-width:500px;
+}
+
+h1 {
+  font-family: 'Lobster';
+  font-size: 4em;
+  color: black;
+  transform: rotate(-10deg);
+}
+
+.alert {
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  min-height: 100vh;
+  overflow:hidden;
+}
+
+.search {
+  flex: 1;
+  text-align: center;
+  background-image: url('/css/searchicon.png'); 
+}
+
+button {
+  background-color: black;
+  border: 0;
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  margin-left: 0;
+  font-family: 'Lobster';
+}
+
+input[type=text] {
+  background: rgba(255, 255, 255, 0.5);
+  outline: none;
+  border: 3px solid black;
+  color: black;
+  font-family: 'Lato';
+  font-size: 2em;
+  padding: 8px;
+  margin-right: 0;
+  text-align:center;
+}
+
+
+::-webkit-input-placeholder {
+  color: black;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+
+:-ms-input-placeholder {
+  color: black;
+}
+
+#poster {
+  margin-top: 20px
+}
+
+#poster p {
+  font-size: 2em;
+  color: black;
+}
+
+input:focus {
+  outline: none;
+}
+
+.alert {
+  background-color: rgba(0, 0, 0, 0.95);
+  display: inline;
+  padding: 10px;
+  color: white;
+}
+
+</style>
