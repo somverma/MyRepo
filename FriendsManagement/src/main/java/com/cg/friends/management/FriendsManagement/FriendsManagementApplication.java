@@ -1,4 +1,4 @@
-package com.friends.FriendsManagement;
+package com.cg.friends.management.FriendsManagement;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

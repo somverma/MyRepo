@@ -1,4 +1,4 @@
-package com.friends.FriendsManagement;
+package com.cg.friends.management.FriendsManagement;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
